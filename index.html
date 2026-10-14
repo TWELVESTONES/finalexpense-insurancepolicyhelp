@@ -10,6 +10,11 @@
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','AW-18454237983');
+gtag('config','AW-18454237983/ySlbCJ_9k5wdEJ-m1d9E',{phone_conversion_number:'(720) 571-9455',phone_conversion_callback:function(fmt,num){
+ var d=String(num||fmt).replace(/\D/g,'');if(d.length===10)d='1'+d;
+ function go(){document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.href='tel:+'+d;});
+  var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(n.nodeValue.indexOf('(720) 571-9455')>-1)n.nodeValue=n.nodeValue.split('(720) 571-9455').join(fmt);}}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();}});
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"]');if(a){gtag('event','conversion',{send_to:'AW-18454237983/zC9fCMaUzJUdEJ-m1d9E',value:1.0,currency:'USD',transport_type:'beacon'});}});
 </script>
 <style>
