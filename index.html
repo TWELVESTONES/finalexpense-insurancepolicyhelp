@@ -40,7 +40,7 @@ h1{font-size:30px;line-height:1.2;margin:0 0 12px}
 .price{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:18px 0 0}
 .price b.t{display:block;margin-bottom:6px}
 .price .r{display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid var(--line)}
-.price .r b{color:var(--accent)}
+.price .r b{color:var(--accent);white-space:nowrap}.price .r span{white-space:nowrap}
 .price small{display:block;color:var(--muted);font-size:13px;margin-top:6px;line-height:1.4}
 ul.ticks{list-style:none;padding:0;margin:24px 0}
 ul.ticks li{padding:8px 0 8px 34px;position:relative;border-bottom:1px solid var(--line)}
@@ -69,7 +69,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 <p class="sub" id="sub">Help cover funeral costs and final bills so your family isn't left paying them. Talk to a licensed agent and get a quote by phone in minutes.</p>
 <a class="call" href="tel:+17205719455">Call (720) 571-9455<small>Free quote &middot; No obligation</small></a>
 <p class="hours">Quick call &middot; No pressure, no obligation</p>
-<div class="price"><b class="t">Plans starting at <span style="color:var(--accent)">$14.65/month</span></b><small>Example: age 50, non-smoking woman in good health, $5,000 coverage. Your rate depends on your age, health, gender, state and coverage amount. A licensed agent will give you your exact price.</small></div>
+<div class="price"><b class="t">Plans starting at <span style="color:var(--accent)">$14.65/month</span></b><div class="r"><span>Age 50 &middot; $5,000</span><b>$14.65/mo</b></div><div class="r"><span>Age 70 &middot; $5,000</span><b>$29.58/mo<small style="margin:0;text-align:right;font-weight:500">about $1 a day</small></b></div><small>Examples for a non-smoking woman in good health. Your rate depends on your age, health, gender, state and coverage amount. A licensed agent will give you your exact price.</small></div>
 </div>
 <ul class="ticks">
 <li>Coverage options for ages 50 to 85</li>
@@ -90,7 +90,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 <details><summary>What is final expense insurance?</summary><p>It is a small whole life insurance policy, often $5,000 to $25,000, meant to help pay for a funeral, burial or cremation, and other final bills.</p></details>
 <details><summary>Do I need a medical exam?</summary><p>Many final expense plans don't require an exam. You answer health questions by phone. Some plans accept people with health problems, though they may have a waiting period.</p></details>
 <details><summary>Can I buy a policy for my parent?</summary><p>Yes, with your parent's permission. They must agree to the policy and usually take part in the phone call.</p></details>
-<details><summary>How much does it cost?</summary><p>Price depends on age, health, state and coverage amount. Plans start at about $14.65/month (example: a healthy 50-year-old non-smoking woman, $5,000 coverage). A licensed agent can give you exact quotes on the call.</p></details>
+<details><summary>How much does it cost?</summary><p>Price depends on age, health, state and coverage amount. Plans start at about $14.65/month. For example, $5,000 of coverage for a healthy non-smoking woman is about $14.65/month at age 50 and about $29.58/month (about $1 a day) at age 70. A licensed agent can give you exact quotes on the call.</p></details>
 </section>
 <div class="cta2">
 <h2>Get your free quote</h2>
